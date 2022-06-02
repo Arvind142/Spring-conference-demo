@@ -8,13 +8,11 @@ services:
         - POSTGRES_DB=conference_app
         - POSTGRES_USER=postgres
         - POSTGRES_PASSWORD=new_se3ret_password_test
-      volumes:
-        - ./:/sql_scripts
       ports:
         - 5432:5432
     adminer:
       container_name: adminer-demo
-      image: adminer:latest
+      image: adminer
       restart: always
       depends_on:
         - database
