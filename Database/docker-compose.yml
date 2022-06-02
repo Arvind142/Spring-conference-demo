@@ -16,5 +16,7 @@ services:
       container_name: adminer-demo
       image: adminer:latest
       restart: always
+      depends_on:
+        - database
       ports:
         - 5001:8080
