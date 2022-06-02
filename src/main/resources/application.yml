@@ -1,0 +1,17 @@
+spring:
+  app:
+    name: conference-demo
+
+
+
+
+# custom data-source
+datasource:
+  url: jdbc:postgres://localhost:3306/
+  username: postgres
+  password: new_se3ret_password_test
+  driverClassName: com.mysql.jdbc.Driver
+
+# server information
+server:
+  port: 5000
