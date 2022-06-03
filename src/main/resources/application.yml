@@ -1,5 +1,16 @@
 spring:
   profiles:
-    active: prod
+    active: local
   application:
     name: conference-demo
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: none
+    show-sql: false
+
+# app details
+app:
+  version: 1.0.1
+  endpoints:
+    sessions: /api/v1/session
+    speakers: /api/v1/speaker

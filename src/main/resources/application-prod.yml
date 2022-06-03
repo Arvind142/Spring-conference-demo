@@ -1,11 +1,3 @@
-spring:
-  application:
-    name: conference-demo
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate.ddl-auto: none
-    show-sql: false
-
 # custom data-source
 datasource:
   url: ${JDBC_URL}
@@ -21,12 +13,3 @@ server:
 logging:
   level:
     com: INFO
-
-
-# app details
-# app details
-app:
-  version: 1.0.1
-  endpoints:
-    sessions: /api/v1/session
-    speakers: /api/v1/speaker
