@@ -4,26 +4,26 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: none
-    show-sql: false
+    show-sql: true
+
+
 
 # custom data-source
 datasource:
-  url: ${JDBC_URL}
-  username: ${JDBC_USERNAME}
-  password: ${JDBC_PASSWORD}
+  url: jdbc:postgresql://localhost:5432/conference_app
+  username: postgres
+  password: new_se3ret_password_test
   driverClassName: org.postgresql.Driver
 
 # server information
 server:
-  port: 80
+  port: 5000
 
 # logging
 logging:
   level:
-    com: INFO
+    com: TRACE
 
-
-# app details
 # app details
 app:
   version: 1.0.1

@@ -1,25 +1,5 @@
 spring:
+  profiles:
+    active: prod
   application:
     name: conference-demo
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate.ddl-auto: none
-    show-sql: true
-
-
-
-# custom data-source
-datasource:
-  url: jdbc:postgresql://localhost:5432/conference_app
-  username: postgres
-  password: new_se3ret_password_test
-  driverClassName: org.postgresql.Driver
-
-# server information
-server:
-  port: 5000
-
-# logging
-logging:
-  level:
-    com: TRACE
