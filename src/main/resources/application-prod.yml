@@ -6,20 +6,18 @@ spring:
     hibernate.ddl-auto: none
     show-sql: true
 
-
-
 # custom data-source
 datasource:
-  url: jdbc:postgresql://localhost:5432/conference_app
-  username: postgres
-  password: new_se3ret_password_test
+  url: $JDBC_URL
+  username: $JDBC_USERNAME
+  password: $JDBC_PASSWORD
   driverClassName: org.postgresql.Driver
 
 # server information
 server:
-  port: 5000
+  port: 80
 
 # logging
 logging:
   level:
-    com: TRACE
+    com: INFO

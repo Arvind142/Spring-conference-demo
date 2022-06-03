@@ -12,14 +12,13 @@ import javax.sql.DataSource;
 public class PersistanceConfigurator {
 
     // few vars to be replaced at runtime
-
-    @Value("${datasource.mysql.url}")
+    @Value("${datasource.url}")
     private String url;
-    @Value("${datasource.mysql.username}")
+    @Value("${datasource.username}")
     private String username;
-    @Value("${datasource.mysql.password}")
+    @Value("${datasource.password}")
     private String password;
-    @Value("${datasource.mysql.driverClassName}")
+    @Value("${datasource.driverClassName}")
     private String driverClassName;
 
     @Bean

@@ -3,7 +3,7 @@ echo "##########################################################################
 echo ">>spinning up containers"
 docker-compose up -d > /dev/null
 echo ">>pause for few seconds until database service is up and running"
-sleep 15
+sleep 20
 echo ">>creating tables"
 docker cp ./create_tables.sql postgres-demo:/create_tables.sql
 docker exec -it postgres-demo psql -d conference_app -f create_tables.sql -U postgres
